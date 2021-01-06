@@ -1,0 +1,22 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Saurav first thymeleaf</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>ISBN</th>
+        <th>Publisher</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.isbn}"></td>
+        <td th:text="${book.publisher.name}"></td>
+    </tr>
+</table>
+</body>
+
+
+
+<html>
